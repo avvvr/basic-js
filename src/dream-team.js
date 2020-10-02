@@ -24,11 +24,9 @@ module.exports = function createDreamTeam(members) {
     }
   }
 
-  let sortedTeamName = '',
-
-  sortedTeamName = teamName.sort(function (a, b) {
+  let sorted = teamName.sort(function (a, b) {
     return a.localeCompare(b);
   }).join('');
 
-  return sortedTeamName.toUpperCase();
+  return sorted.toUpperCase();
 };
